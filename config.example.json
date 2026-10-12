@@ -1,0 +1,45 @@
+﻿{
+  "dry_run": true,
+  "log_file": "logs/bot.log",
+  "debug_frame_path": "debug_frames/last_frame.jpg",
+  "screen": {
+    "monitor": 1,
+    "region": null
+  },
+  "detector_local": {
+    "template_dir": "templates",
+    "confidence": 0.82,
+    "grayscale": true
+  },
+  "detector_ai": {
+    "enabled": false,
+    "model": "gpt-4.1-mini",
+    "base_url": "",
+    "cooldown_seconds": 8,
+    "max_calls_per_minute": 6,
+    "timeout_seconds": 20
+  },
+  "executor": {
+    "interact_key": "f",
+    "move_duration_range": [0.18, 0.42],
+    "action_delay_range": [0.09, 0.24],
+    "jitter_px": 6,
+    "failsafe_corner_px": 4,
+    "actions_per_minute": 180
+  },
+  "runtime": {
+    "tick_seconds": 0.35,
+    "verify_delay_seconds": 1.4,
+    "anti_stuck_attempts": 5,
+    "reposition_pixels": 120,
+    "camera_turn_key": "right"
+  },
+  "planner": {
+    "use_openai": false,
+    "model": "gpt-4.1-mini",
+    "base_url": "",
+    "default_stop_minutes": 20,
+    "default_max_cycles": 500
+  }
+}
+

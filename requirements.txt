@@ -1,0 +1,9 @@
+﻿openai>=1.30.0
+opencv-python>=4.9.0.80
+mss>=9.0.1
+pydirectinput>=1.0.4
+keyboard>=0.13.5
+python-dotenv>=1.0.1
+numpy>=1.26.0
+pillow>=10.3.0
+rich>=13.7.1
